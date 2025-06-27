@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffe6ea;
+  color: #4b2e2e;
+}
+
+.container,
+.letter-container {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.home .container img {
+  border-radius: 100%;
+}
+
+button {
+  background-color: #ff8fab;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.letter-text {
+  max-width: 600px;
+  text-align: justify;
+  margin: auto;
+  font-size: 1.1em;
+  line-height: 1.6;
+  background: #fff0f5;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.images {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.images img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.images img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+body.letter {
+  background-image: url('images/lily.png');
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: left bottom;
+  background-attachment: fixed;
+}
+
+/* ------------------ Responsive Design ------------------ */
+
+@media (max-width: 768px) {
+  .letter-text {
+    padding: 15px;
+    font-size: 1em;
+  }
+
+  button {
+    padding: 12px 25px;
+    font-size: 1em;
+  }
+
+  .images img {
+    width: 150px;
+    margin: 8px;
+  }
+
+  body.letter {
+    background-size: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .letter-text {
+    font-size: 0.95em;
+    padding: 12px;
+  }
+
+  .images img {
+    width: 120px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 0.95em;
+  }
+
+  .container,
+  .letter-container {
+    padding: 30px 15px;
+  }
+
+  body.letter {
+    background-size: 200px;
+  }
+}
